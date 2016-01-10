@@ -38,6 +38,23 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-7",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 364.0, 246.0, 56.0, 22.0 ],
+					"sig" : 0.0,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-31",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -346,7 +363,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 424.0, 245.0, 38.0, 22.0 ],
+					"patching_rect" : [ 424.0, 235.0, 38.0, 22.0 ],
 					"style" : "",
 					"text" : "%~ 1"
 				}
@@ -389,7 +406,7 @@
 					"outlettype" : [ "signal", "signal", "", "" ],
 					"patching_rect" : [ 481.0, 332.0, 101.0, 23.0 ],
 					"style" : "",
-					"text" : "adsr~ 1 0 1 5"
+					"text" : "adsr~ 0 0 1 5"
 				}
 
 			}
@@ -675,6 +692,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-60", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -865,7 +891,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "seq.js",
-				"bootpath" : "~/Documents/mp/algo-drum-seq",
+				"bootpath" : "~/workspace/max-patches/algo-drum-seq",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

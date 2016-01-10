@@ -4,7 +4,7 @@ function bang()
 {
     var pos = 0.0;
     var stepList = [];
-    var stepTypes = [1/8, 1/16];
+    var stepTypes = [1/16, 1/8];
     while (pos < 1.0) {
         stepList.push(pos);
         var rnd = Math.floor(Math.random() * stepTypes.length);
